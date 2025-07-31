@@ -128,19 +128,14 @@ Un vendeur crée un compte “Company”, personnalise son reçu (logo + tampon)
 Un individu utilise la calculatrice halal pour planifier une épargne sans intérêt.
 
 L’utilisateur reçoit des conseils financiers depuis le blog et s’inscrit à la newsletter
+
 ## Stack technique
-Backend : Flask, Flask-RESTful, Flask-JWT-Extended, SQLAlchemy
+- Backend : Flask, Flask-RESTful, Flask-JWT-Extended, SQLAlchemy
+- Base de données : SQLite (développement) / PostgreSQL (production)
+- Frontend : Angular (ou HTML/CSS/JS)
+- Auth : JWT
+- Email : Mailchimp ou SMTP pour newsletters ## 📦 requirements.txt (extrait recommandé)
 
-Base de données : SQLite (développement) / PostgreSQL (production)
-
-Frontend : Angular (ou HTML/CSS/JS)
-
-Auth : JWT
-
-Email : Mailchimp ou SMTP pour newsletters ## 📦 requirements.txt (extrait recommandé)
-txt
-Copy
-Edit
 Flask==3.0.0
 Flask-RESTful==0.3.10
 Flask-JWT-Extended==4.6.0
@@ -152,17 +147,19 @@ passlib==1.7.4
 bcrypt==4.1.2
 PyJWT==2.8.0
 gunicorn==21.2.0
-Notes
-Les calculs financiers respectent les principes de la finance éthique / halal : pas d’intérêt usurier.
 
-Séparer les rôles entre comptes “Company” et “Entité” permet une personnalisation fine du tableau de bord. ""## Notes
+## Notes
+Les calculs financiers respectent les principes de la finance éthique / halal : pas d’intérêt usurier.
+Séparer les rôles entre comptes “Company” et “Entité” permet une personnalisation fine du tableau de bord. 
+
+## Notes
 Les calculs financiers respectent les principes de la finance éthique / halal : pas d’intérêt usurier.
 
 Séparer les rôles entre comptes “Company” et “Entité” permet une personnalisation fine du tableau de bord. 🤝 Contribution
 Tu peux contribuer via des issues ou pull requests sur GitHub. Merci de forker le dépôt et de soumettre une PR avec une description claire.
 
-📫 Contact
+## Contact
 Pour questions ou support : ouvre une issue sur le dépôt GitHub.
-## License
 
+## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
