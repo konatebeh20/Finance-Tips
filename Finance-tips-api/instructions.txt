@@ -1,0 +1,45 @@
+Finance-Tips API – Instructions d’installation
+=============================================
+
+Prérequis
+---------
+- Python 3.10+
+- Git
+
+Installation rapide
+-------------------
+1. Cloner le repo :
+   ````bash
+   git clone <url-du-repo>
+   cd Finance-tips-api
+   ````
+2. Créer un environnement virtuel :
+   ````bash
+   python -m venv venv
+   source venv/bin/activate  # Windows : venv\Scripts\activate
+   ````
+3. Installer les dépendances :
+   ````bash
+   pip install -r requirements.txt
+   ````
+4. Configurer les variables d’environnement (fichier ``.env``) :
+   ````dotenv
+   FLASK_ENV=development
+   SECRET_KEY=super_secret
+   DATABASE_URL=sqlite:///finance_tips.db
+   JWT_SECRET_KEY=another_secret
+   ````
+5. Lancer l’application :
+   ````bash
+   python app.py
+   ````
+
+L’API sera accessible sur http://localhost:5000/ (endpoints sous /api/*).
+
+Tests rapides
+-------------
+- POST /api/users/register → création d’un utilisateur
+- POST /api/users/login → récupération d’un JWT
+- POST /api/tips/saving-plan → calcul d’un plan d’épargne
+
+Bonne exploration !
